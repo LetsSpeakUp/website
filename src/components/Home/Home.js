@@ -1,5 +1,6 @@
 import './Home.css'
 import logoAlt from '../../images/logoAlt.png'
+import Contact from '../Contact/Contact'
 
 const Home = () => {
     return (
@@ -12,6 +13,9 @@ const Home = () => {
                     <a href='#events'><button className='event-button'>Get Started</button></a>
                 </div>
                 <img className='logo-img' src={logoAlt} alt='logo' />
+            </div>
+            <div id='contact'>
+                <Contact />
             </div>
         </div>
 

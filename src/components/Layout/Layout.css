@@ -72,12 +72,8 @@ ul li {
     left: 0;
 }
 
-.active {
-    border: solid #ffd21e;
-}
-
 .floating-button {
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     right: 5%;
     background-color: #FFD21E;
