@@ -24,13 +24,13 @@ const Layout = () => {
                 </div>
                 <ul className={expanded ? "expanded" : ""}>
                     <li>
-                        <NavLink to="/" className='nav-links' activeClassName='active'>Home</NavLink>
+                        <NavLink to="/" className='nav-links'>Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/about" className='nav-links' activeClassName='active'>About</NavLink>
+                        <NavLink to="/about" className='nav-links'>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/contact" className='nav-links' activeClassName='active'>Contact Us</NavLink>
+                        <NavLink to="#contact" className='nav-links'>Contact Us</NavLink>
                     </li>
                 </ul>
             </nav>
