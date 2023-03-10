@@ -35,12 +35,6 @@ const Layout = () => {
                 </ul>
             </nav>
 
-            <a href='#contact'>
-                <div className='floating-button'>
-                    Contact us <span className='wave'><FaPhoneAlt /></span>
-                </div>
-            </a>
-
 
             <Outlet />
         </>
