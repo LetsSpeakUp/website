@@ -1,0 +1,36 @@
+.head-container {
+    width: 90%;
+    margin: auto;
+}
+
+.head-container .top {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.head-quote {
+    font-family: 'Cookie', cursive;
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+.event-button {
+    background-image: linear-gradient(to left, #FFD12E, #faff9a);
+    margin: 3rem auto;
+    padding: 0.75rem 1.25rem;
+    border-radius: 26px;
+    font-size: 1.1rem;
+    scale: 0.9;
+    transition: all ease-in-out 1s;
+}
+
+.event-button:hover {
+    scale: 1;
+    background-image: linear-gradient(to right, #FFD12E, #FAFF9A);
+}
+
+.logo-img {
+    width: 40%;
+    filter: drop-shadow(0 0 60px #cbcaca);
+}
