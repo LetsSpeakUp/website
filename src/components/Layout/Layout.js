@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Layout.css'
 import { Outlet, NavLink } from "react-router-dom";
 import logo from '../../images/logo.png'
-import { FaPhoneAlt } from 'react-icons/fa'
 
 const Layout = () => {
     const [expanded, setExpanded] = useState(false)
@@ -30,7 +29,7 @@ const Layout = () => {
                         <NavLink to="/about" className='nav-links'>About</NavLink>
                     </li>
                     <li>
-                        <NavLink to="#contact" className='nav-links'>Contact Us</NavLink>
+                        <a href="#contact" className='nav-links'>Contact Us</a>
                     </li>
                 </ul>
             </nav>
