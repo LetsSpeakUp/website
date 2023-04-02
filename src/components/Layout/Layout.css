@@ -45,6 +45,7 @@ ul li {
 .nav-links {
     font-size: 1rem;
     font-weight: 400;
+    margin: auto 1rem;
     text-decoration: none;
     color: #f1f1f1;
     text-transform: uppercase;
@@ -52,24 +53,12 @@ ul li {
     display: inline-block;
     padding: 0.75rem 0.9rem;
     position: relative;
+    transition: all 0.3s ease-in-out;
 }
 
-.nav-links:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: #FFD21E;
-    transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
-}
-
-.nav-links:hover:after {
-    width: 100%;
-    left: 0;
+.nav-links:hover {
+    background-color: #434343;
+    border-radius: 20px;
 }
 
 .wave {
