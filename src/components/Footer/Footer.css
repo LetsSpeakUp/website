@@ -3,10 +3,11 @@
     justify-content: row;
     align-items: center;
     font-family: "Montserrat", sans-serif;
+    background-color: #3c3c3c;
 }
 
 .logo-container {
-    margin: auto;
+    margin: auto 4rem;
 }
 
 .footer-image {
@@ -18,6 +19,10 @@
 
 .footer-image img {
     width: 5%;
+}
+
+.text-container {
+    margin: auto 5rem;
 }
 
 .text-container h3 {
