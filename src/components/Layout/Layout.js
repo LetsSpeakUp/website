@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Layout.css'
 import { Outlet, NavLink } from "react-router-dom";
 import logo from '../../images/logo.png'
+import Footer from '../Footer/Footer.js'
 
 const Layout = () => {
     const [expanded, setExpanded] = useState(false)
@@ -34,8 +35,11 @@ const Layout = () => {
                 </ul>
             </nav>
 
-
             <Outlet />
+
+            <div id='footer'>
+                <Footer />
+            </div>
         </>
     )
 };
