@@ -23,13 +23,13 @@ const Layout = () => {
                     <a href='/'><img className='logo' src={logo} alt='logo' />Let's Speak Up</a>
                 </div>
                 <ul className={expanded ? "expanded" : ""}>
-                    <li>
+                    <li className='nav-items'>
                         <NavLink to="/" className='nav-links'>Home</NavLink>
                     </li>
-                    <li>
+                    <li className='nav-items'>
                         <NavLink to="/about" className='nav-links'>About</NavLink>
                     </li>
-                    <li>
+                    <li className='nav-items'>
                         <a href="#contact" className='nav-links'>Contact Us</a>
                     </li>
                 </ul>
