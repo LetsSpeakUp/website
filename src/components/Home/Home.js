@@ -1,6 +1,7 @@
 import './Home.css'
 import logoAlt from '../../images/logoAlt.png'
 import Contact from '../Contact/Contact'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
     return (
@@ -17,8 +18,10 @@ const Home = () => {
             <div id='contact'>
                 <Contact />
             </div>
+            <div id='footer'>
+                <Footer />
+            </div>
         </div>
-
     )
 }
 
