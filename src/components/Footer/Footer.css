@@ -3,7 +3,7 @@
     justify-content: row;
     align-items: center;
     font-family: "Montserrat", sans-serif;
-    background-color: #3c3c3c;
+    background-image: linear-gradient(to right, #242424, #363636);
 }
 
 .logo-container {
