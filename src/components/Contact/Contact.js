@@ -3,7 +3,7 @@ import { FaDiscord, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react
 
 const Contact = () => {
 
-    const linkedinLink = 'https://www.linkedin.com/in/let-s-speak-up-340189251?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BYcB7rx6cSK2SbReHkjgNzw%3D%3D'
+    const linkedinLink = 'https://www.linkedin.com/in/let-s-speak-up-340189251/'
     const whatsappLink = 'https://chat.whatsapp.com/GqHU7BShJUAGRi00J7tsBi'
     const twitterLink = 'https://twitter.com/Lets__Speak__Up'
     const instagramLink = 'https://instagram.com/_lets_speak_up'
@@ -18,11 +18,11 @@ const Contact = () => {
                 on various platforms to get access to all the events and resources
             </p>
             <div className='social-icons'>
-                <div className='icon discord'><a href={discordLink}><FaDiscord /></a></div>
-                <div className='icon instagram'><a href={instagramLink}><FaInstagram /></a></div>
-                <div className='icon whatsapp'><a href={whatsappLink}><FaWhatsapp /></a></div>
-                <div className='icon linkedin'><a href={linkedinLink}><FaLinkedin /></a></div>
-                <div className='icon twitter'><a href={twitterLink}><FaTwitter /></a></div>
+                <div className='icon discord'><a target='_blank' rel='noreferrer' href={discordLink}><FaDiscord /></a></div>
+                <div className='icon instagram'><a target='_blank' rel='noreferrer' href={instagramLink}><FaInstagram /></a></div>
+                <div className='icon whatsapp'><a target='_blank' rel='noreferrer' href={whatsappLink}><FaWhatsapp /></a></div>
+                <div className='icon linkedin'><a target='_blank' rel='noreferrer' href={linkedinLink}><FaLinkedin /></a></div>
+                <div className='icon twitter'><a target='_blank' rel='noreferrer' href={twitterLink}><FaTwitter /></a></div>
             </div>
 
         </div>
