@@ -1,0 +1,74 @@
+.about-container {
+    margin: 2rem auto;
+    font-family: "Monserrat", sans-serif;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-container h2 {
+    display: inline;
+    font-size: 2.5rem;
+    margin: 1rem 6rem;
+    border-bottom: solid 3px #ffd21d;
+    transition: all ease-in-out 0.4s;
+    user-select: none;
+}
+
+.about-container h2:hover {
+    color: #ffd21d;
+    border-bottom: solid 3px #eee;
+    font-size: 2.75rem;
+}
+
+.info {
+    font-size: 1.5rem;
+    margin: 1rem 3rem;
+    width: 80%;
+}
+
+.info p {
+    background-color: #363636;
+    padding: 1rem;
+    border-radius: 20px;
+    transition: all ease-in-out 0.4s;
+    scale: 0.9;
+}
+
+.info p:hover{
+    background-color: #1d1c1c;
+    scale: 1;
+}
+
+.floating {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+}
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+
+    50% {
+        transform: translate(0, 15px);
+    }
+
+    100% {
+        transform: translate(0, -0px);
+    }
+}

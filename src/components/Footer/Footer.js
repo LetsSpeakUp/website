@@ -2,8 +2,6 @@ import './Footer.css'
 import logo from '../../images/logo.png'
 import { FaDiscord, FaEnvelope, FaInstagram, FaLinkedin, FaTwitter, FaWhatsapp } from 'react-icons/fa'
 
-
-
 const Footer = () => {
 
     const linkedinLink = 'https://www.linkedin.com/in/let-s-speak-up-340189251/'
