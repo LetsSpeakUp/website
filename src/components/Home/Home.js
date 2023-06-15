@@ -1,5 +1,5 @@
 import './Home.css'
-import About from './components/about/About'
+import About from '../about/About'
 import logoAlt from '../../images/logoAlt.png'
 import Contact from '../Contact/Contact'
 import Blogs from '../Blogs/Blog'
