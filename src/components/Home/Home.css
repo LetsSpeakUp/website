@@ -22,12 +22,13 @@
     border-radius: 26px;
     font-size: 1.1rem;
     scale: 0.9;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 0.2s;
 }
 
 .event-button:hover {
     scale: 1;
     background-image: linear-gradient(to right, #FFD12E, #FAFF9A);
+    transition: all ease-in-out 0.2s;
 }
 
 .logo-img {

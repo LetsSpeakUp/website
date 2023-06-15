@@ -1,7 +1,7 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
-    background-image: linear-gradient(to right, #242424, #4a4a4a);
-    color: #c7c7c7;
+    background-color: #242424;
+    color: #ededed;
     font-family: 'Roboto', sans-serif;
 }
