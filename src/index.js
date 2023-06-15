@@ -9,3 +9,12 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+ReactDOM.render(
+  <React.StrictMode>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
