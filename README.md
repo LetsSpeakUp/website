@@ -1,30 +1,38 @@
-# 🔥 LSU (Let's Speak Up)
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Getting Started
 
-## 👋 Join Us :
-Join our amazing community on Discord and Twitter.
+First, run the development server:
 
-<a href="https://discord.com/invite/gspRppn6Nq"><img src="https://cdn.worldvectorlogo.com/logos/discord-6.svg" title="Discord" alt="Discord Community" width="40"/></a><a href="https://twitter.com/Lets__Speak__Up"><img src="https://cdn.worldvectorlogo.com/logos/twitter-6.svg" title="Twitter" alt="Twitter Account" width="40"/></a>
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
-<br>
-<img src="https://d1fdloi71mui9q.cloudfront.net/CUkWocOyRiO82gxMebOS_mwsLz1PB4jRQZv3d" alt="LSU Logo" style="width: 15%;">
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📷 Website overview
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-This repository concerns the LSU [website](Website URL). Visit the website to stay up to date with community members for amazing content!
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-## 🎉 Want to contribute?
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-Whether you are a community member or not, we would love your point of view! Feel free to first check out our
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-#### 🔖 Tech Stack
+## Learn More
 
-Followed By Tech Stacks !
+To learn more about Next.js, take a look at the following resources:
 
-#### 🔖 Contribution steps
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-Notice anything odd and/or missing from this README or on the website itself? Feel free to raise an issue
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Please leave a star ⭐️ All support is highly appreciated.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
