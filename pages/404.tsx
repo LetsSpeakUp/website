@@ -6,12 +6,12 @@ type Props = {};
 export default function Custom404({}: Props) {
   return (
     <div>
-      <div className="grid h-screen px-4 place-content-center dark:bg-gray-900">
+      <div className="grid h-screen px-4 place-content-center bg-gray-100 dark:bg-gray-900">
         <div className="text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1024 768"
-            className="w-auto h-56 mx-auto dark:text-gray-100 sm:h-64"
+            className="w-auto h-56 mx-auto text-black dark:text-gray-100 sm:h-64"
           >
             <g fill="none" fill-rule="evenodd">
               <g fill="#FF5678">

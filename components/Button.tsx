@@ -8,13 +8,13 @@ const Button = () => {
   const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
-    <div>
+    <div className="relative">
       <button
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
         className="transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-sm rounded-lg bottom-32"
       >
         <SunIcon className="text-black dark:text-white h-10 w-10 transition-all">
-          {" "}
+          {/* <span className="absolute text-2xl hidden hover:flex">1234</span> */}
         </SunIcon>
       </button>
     </div>

@@ -6,7 +6,7 @@ function Footer({}: Props) {
   return (
     <div>
   
-  <footer className="bg-gray-100 dark:bg-gray-950 bottom-0">
+  <footer className="bg-gray-200 dark:bg-gray-950 bottom-0">
     <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
@@ -165,7 +165,7 @@ function Footer({}: Props) {
           className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2"
         >
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-200">About Us</p>
+            <p className="text-lg font-medium text-gray-700 dark:text-gray-200">About Us</p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -207,7 +207,7 @@ function Footer({}: Props) {
           </div>
   
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-200">Our Services</p>
+            <p className="text-lg font-medium text-gray-700 dark:text-gray-200">Our Services</p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -251,7 +251,7 @@ function Footer({}: Props) {
           
   
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-200">Contact Us</p>
+            <p className="text-lg font-medium text-gray-700 dark:text-gray-200">Contact Us</p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
