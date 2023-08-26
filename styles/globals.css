@@ -26,3 +26,9 @@ body {
     rgb(var(--background-start-rgb));
     background-color: #242424;
 }
+
+@layer base{
+  body {
+      @apply dark:bg-gray-800 bg-white
+  }
+}
