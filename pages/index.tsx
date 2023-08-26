@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Link from "next/link";
 import Hero from "@/components/Hero";
-import Button from "@/components/Button";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,7 +17,7 @@ export default function Home() {
         <Footer />
       </section>
      
-      <Button/>
+      
 
 
 

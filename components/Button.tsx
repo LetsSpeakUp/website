@@ -11,12 +11,12 @@ const Button = () => {
     <div>
       <button
         onClick={() => (theme == "dark" ? setTheme("light") : setTheme("dark"))}
-        className="bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg absolute bottom-32"
+        className="transition-all duration-100 text-white dark:text-gray-800 px-8 py-2 text-sm rounded-lg bottom-32"
       >
-        Toggle Mode
+        <SunIcon className="text-black dark:text-white h-10 w-10 transition-all">
+          {" "}
+        </SunIcon>
       </button>
-
-      <SunIcon className="text-black dark:text-white h-10 w-10"></SunIcon>
     </div>
   );
 };

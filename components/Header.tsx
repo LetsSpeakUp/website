@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "@/components/Button";
 
 type Props = {};
 
@@ -75,6 +76,7 @@ export default function Header({}: Props) {
                     Login
                   </a>
                 </div>
+                <Button />
 
                 <div className="block md:hidden">
                   <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-500/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
@@ -93,6 +95,7 @@ export default function Header({}: Props) {
                       />
                     </svg>
                   </button>
+                  b
                 </div>
               </div>
             </div>
