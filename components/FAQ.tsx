@@ -1,114 +1,182 @@
-import React from 'react'
+import React from "react";
+import { PlusCircleIcon } from "@heroicons/react/24/outline";
+import { MinusCircleIcon } from "@heroicons/react/24/outline";
 
-type Props = {}
+type Props = {};
 
 function FAQ({}: Props) {
   return (
-    <div><div className="space-y-4">
-    <details
-      className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
-      open
-    >
-      <summary
-        className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
-      >
-        <h2 className="font-medium">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
+    <div className="flex flex-col justify-center bg-gray-100 dark:bg-[#151515] max-w-full">
+      <div className="flex-col space-y-6 p-5 px-3">
+        <h1 className="font-semibold text-2xl md:text-4xl text-yellow-300 text-center mt-5">
+          Frequently Asked Questions
+        </h1>
+        <h2 className="font-light text-md md:text-xl text-black dark:text-gray-300 text-center pb-5">
+          Everything you need to know about us
         </h2>
-  
-        <span className="relative h-5 w-5 shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-0 h-5 w-5 opacity-100 group-open:opacity-0"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-  
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-0 h-5 w-5 opacity-0 group-open:opacity-100"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-  
-    <details
-      className="group rounded-lg bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden"
-    >
-      <summary
-        className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900"
-      >
-        <h2 className="font-medium">
-          Lorem ipsum dolor sit amet consectetur adipisicing?
-        </h2>
-  
-        <span className="relative h-5 w-5 shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-0 opacity-100 group-open:opacity-0"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-  
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="absolute inset-0 opacity-0 group-open:opacity-100"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M15 12H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
-            />
-          </svg>
-        </span>
-      </summary>
-  
-      <p className="mt-4 leading-relaxed text-gray-700">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic veritatis
-        molestias culpa in, recusandae laboriosam neque aliquid libero nesciunt
-        voluptate dicta quo officiis explicabo consequuntur distinctio corporis
-        earum similique!
-      </p>
-    </details>
-  </div></div>
-  )
+
+        <details
+          className="group rounded-lg bg-gray-50 border hover:border-yellow-500 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
+          open
+        >
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+        <details
+          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
+          open
+        >
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+        <details
+          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
+          open
+        >
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+        <details
+          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
+          open
+        >
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+        <details
+          className="group rounded-lg bg-gray-50 dark:bg-gray-900 hover:shadow-lg transition-all p-6 [&_summary::-webkit-details-marker]:hidden"
+          open
+        >
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+        <details
+          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
+          open
+        >
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+
+        <details className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
+            <h2 className="font-medium">
+              Lorem ipsum dolor sit amet consectetur adipisicing?
+            </h2>
+
+            <span className="relative h-5 w-5 shrink-0 hover:animate-pulse">
+              <PlusCircleIcon className="group-open:opacity-0" />
+
+              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
+            </span>
+          </summary>
+
+          <p className="mt-4 leading-relaxed text-gray-700">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
+            veritatis molestias culpa in, recusandae laboriosam neque aliquid
+            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
+            distinctio corporis earum similique!
+          </p>
+        </details>
+      </div>
+    </div>
+  );
 }
 
-export default FAQ
+export default FAQ;
