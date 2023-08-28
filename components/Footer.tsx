@@ -165,7 +165,8 @@ function Footer({}: Props) {
           className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2"
         >
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-200">About Us</p>
+          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group"><span>About Us</span>
+            <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -207,7 +208,8 @@ function Footer({}: Props) {
           </div>
   
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-200">Our Services</p>
+          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group"><span>Events</span>
+            <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -251,7 +253,8 @@ function Footer({}: Props) {
           
   
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-200">Contact Us</p>
+            <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group"><span>Contact Us</span>
+            <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>

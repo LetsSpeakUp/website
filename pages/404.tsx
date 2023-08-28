@@ -6,7 +6,7 @@ type Props = {};
 export default function Custom404({}: Props) {
   return (
     <div>
-      <div className="grid h-screen px-4 place-content-center bg-gray-100 dark:bg-gray-900">
+      <div className="grid h-screen px-4 place-content-center bg-gray-100 dark:bg-[#151515]">
         <div className="text-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -38,14 +38,14 @@ export default function Custom404({}: Props) {
         </div>
         <Link 
             href="/"
-            className="group flex items-center justify-between gap-4 rounded-lg border border-yellow-600 bg-yellow-600 px-5 py-3 mt-5 transition-colors hover:bg-transparent focus:outline-none focus:ring shadow-md"
+            className="group flex items-center justify-between gap-4 rounded-lg border border-yellow-600 bg-yellow-500 px-5 py-3 mt-5 transition-colors hover:bg-transparent focus:outline-none focus:ring shadow-md"
           >
            
-              <span className="font-medium text-black transition-colors group-hover:text-yellow-600 group-active:text-yellow-500">
+              <span className="font-medium text-black transition-colors group-hover:text-yellow-500 group-active:text-yellow-500">
                 Go back to Home
               </span>
 
-              <span className="shrink-0 rounded-full border border-current bg-white p-2 text-yellow-600 group-active:text-yellow-500">
+              <span className="shrink-0 rounded-full border border-current bg-white dark:bg-[#151515] p-2 text-yellow-500 group-active:text-yellow-500">
                 <svg
                   className="h-5 w-5 rtl:rotate-180"
                   xmlns="http://www.w3.org/2000/svg"
