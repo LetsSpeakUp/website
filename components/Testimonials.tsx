@@ -4,14 +4,14 @@ type Props = {}
 
 function Testimonials({}: Props) {
   return (
-    <div><section className="bg-white">
+    <div><section className="bg-gray-100 dark:bg-[#151515]">
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-      <h2 className="text-center text-4xl font-bold tracking-tight sm:text-5xl">
+      <h2 className="text-center text-4xl font-bold tracking-tight sm:text-5xl text-black dark:text-gray-100">
         See What The Community Has to Say
       </h2>
   
       <div className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8">
-        <blockquote className="rounded-lg bg-gray-100 p-8">
+        <blockquote className="rounded-lg border border-yellow-500 p-8">
           <div className="flex items-center gap-4">
             <img
               alt="Man"
@@ -20,7 +20,7 @@ function Testimonials({}: Props) {
             />
   
             <div>
-              <div className="flex justify-center gap-0.5 text-green-500">
+              <div className="flex justify-center gap-0.5 text-yellow-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"
@@ -73,17 +73,17 @@ function Testimonials({}: Props) {
                 </svg>
               </div>
   
-              <p className="mt-1 text-lg font-medium text-gray-700">Paul Starr</p>
+              <p className="mt-1 text-lg font-medium text-gray-700 dark:text-gray-100">Avantika Shrivastava</p>
             </div>
           </div>
   
-          <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+          <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500 dark:text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             voluptatem alias ut provident sapiente repellendus.
           </p>
         </blockquote>
   
-        <blockquote className="rounded-lg bg-gray-100 p-8">
+        <blockquote className="rounded-lg border border-yellow-500 p-8">
           <div className="flex items-center gap-4">
             <img
               alt="Man"
@@ -92,7 +92,7 @@ function Testimonials({}: Props) {
             />
   
             <div>
-              <div className="flex justify-center gap-0.5 text-green-500">
+              <div className="flex justify-center gap-0.5 text-yellow-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"
@@ -145,17 +145,17 @@ function Testimonials({}: Props) {
                 </svg>
               </div>
   
-              <p className="mt-1 text-lg font-medium text-gray-700">Siddhant Shrivastava</p>
+              <p className="mt-1 text-lg font-medium text-gray-700 dark:text-gray-100">Siddhant Shrivastava</p>
             </div>
           </div>
   
-          <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+          <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500 dark:text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             voluptatem alias ut provident sapiente repellendus.
           </p>
         </blockquote>
   
-        <blockquote className="rounded-lg bg-gray-100 p-8">
+        <blockquote className="rounded-lg border border-yellow-500 p-8">
           <div className="flex items-center gap-4">
             <img
               alt="Man"
@@ -164,7 +164,7 @@ function Testimonials({}: Props) {
             />
   
             <div>
-              <div className="flex justify-center gap-0.5 text-green-500">
+              <div className="flex justify-center gap-0.5 text-yellow-500">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-4 w-4"
@@ -217,11 +217,11 @@ function Testimonials({}: Props) {
                 </svg>
               </div>
   
-              <p className="mt-1 text-lg font-medium text-gray-700">Sushant Sharma</p>
+              <p className="mt-1 text-lg font-medium text-gray-700 dark:text-gray-100">Sushant Sharma</p>
             </div>
           </div>
   
-          <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500">
+          <p className="line-clamp-2 sm:line-clamp-none mt-4 text-gray-500 dark:text-gray-400">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             voluptatem alias ut provident sapiente repellendus.
           </p>
