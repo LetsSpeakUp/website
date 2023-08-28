@@ -72,7 +72,7 @@ function Footer({}: Props) {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-yellow-600 transition hover:text-yellow-600/75"
+                className="text-yellow-600 transition hover:text-yellow-300"
               >
                 <span className="sr-only">Facebook</span>
                 <svg
@@ -95,7 +95,7 @@ function Footer({}: Props) {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-yellow-600 transition hover:text-yellow-600/75"
+                className="text-yellow-600 transition hover:text-yellow-300"
               >
                 <span className="sr-only">Instagram</span>
                 <svg
@@ -118,7 +118,7 @@ function Footer({}: Props) {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-yellow-600 transition hover:text-yellow-600/75"
+                className="text-yellow-600 transition hover:text-yellow-300"
               >
                 <span className="sr-only">Twitter</span>
                 <svg
@@ -139,7 +139,7 @@ function Footer({}: Props) {
                 href="/"
                 rel="noreferrer"
                 target="_blank"
-                className="text-yellow-600 transition hover:text-yellow-600/75"
+                className="text-yellow-600 transition hover:text-yellow-300"
               >
                 <span className="sr-only">GitHub</span>
                 <svg
@@ -165,13 +165,13 @@ function Footer({}: Props) {
           className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2"
         >
           <div className="text-center sm:text-left">
-          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group"><span>About Us</span>
+          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>About Us</span>
             <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                   Company History
@@ -180,7 +180,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                   Meet the Team
@@ -189,7 +189,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                  Join the Team
@@ -198,7 +198,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                   Careers
@@ -208,13 +208,13 @@ function Footer({}: Props) {
           </div>
   
           <div className="text-center sm:text-left">
-          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group"><span>Events</span>
+          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>Events</span>
             <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                  Our Blogs
@@ -223,7 +223,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                   Web Design
@@ -232,7 +232,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                   Marketing
@@ -241,7 +241,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-600/75"
+                  className="text-gray-700 transition hover:text-yellow-300"
                   href="/"
                 >
                   Google Ads
@@ -253,7 +253,7 @@ function Footer({}: Props) {
           
   
           <div className="text-center sm:text-left">
-            <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group"><span>Contact Us</span>
+            <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>Contact Us</span>
             <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">

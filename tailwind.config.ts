@@ -9,6 +9,7 @@ const config: Config = ({
   ],
   plugins: [
     require('@tailwindcss/forms'),
+    require('tailwind-scrollbar'),
   ],
   theme: {
     extend: {

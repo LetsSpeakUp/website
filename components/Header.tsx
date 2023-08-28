@@ -31,7 +31,7 @@ export default function Header({}: Props) {
                 <ul className="flex items-center gap-6 text-sm">
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-500 transition hover:text-yellow-500 dark:text-white dark:hover:text-yellow-300"
                       href="/about"
                     >
                       About
@@ -40,7 +40,7 @@ export default function Header({}: Props) {
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300"
                       href="/"
                     >
                       History
@@ -49,7 +49,7 @@ export default function Header({}: Props) {
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300"
                       href="/Join"
                     >
                       Join the Team
@@ -58,7 +58,7 @@ export default function Header({}: Props) {
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-white/75"
+                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300"
                       href="/"
                     >
                       Our Blogs
@@ -79,7 +79,7 @@ export default function Header({}: Props) {
                 <Button />
 
                 <div className="block md:hidden">
-                  <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-500/75 dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
+                  <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-500/75 dark:bg-gray-800 dark:text-white dark:hover:text-yellow-300">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5"
