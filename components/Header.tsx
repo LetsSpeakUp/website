@@ -31,37 +31,41 @@ export default function Header({}: Props) {
                 <ul className="flex items-center gap-6 text-sm">
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500 dark:text-white dark:hover:text-yellow-300"
+                      className="relative group text-gray-500 transition hover:text-yellow-500 dark:text-white dark:hover:text-yellow-300"
                       href="/about"
                     >
-                      About
+                      <span> About</span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"></span>
                     </a>
                   </li>
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300"
+                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300 group relative"
                       href="/"
                     >
-                      History
+                      <span>History</span> 
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"/>
                     </a>
                   </li>
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300"
+                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300 group relative"
                       href="/Join"
                     >
-                      Join the Team
+                     <span>Join the Team</span> 
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"/>
                     </a>
                   </li>
 
                   <li>
                     <a
-                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300"
+                      className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300 group relative"
                       href="/"
                     >
-                      Our Blogs
+                      <span> Our Blogs</span>
+                      <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"/>
                     </a>
                   </li>
                 </ul>
