@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "@/components/Button";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 type Props = {};
 
@@ -42,9 +43,9 @@ export default function Header({}: Props) {
                   <li>
                     <a
                       className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300 group relative"
-                      href="/"
+                      href="/meet"
                     >
-                      <span>History</span> 
+                      <span>Meet the Team</span> 
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"/>
                     </a>
                   </li>
@@ -54,7 +55,7 @@ export default function Header({}: Props) {
                       className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300 group relative"
                       href="/Join"
                     >
-                     <span>Join the Team</span> 
+                     <span>Join Us</span> 
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"/>
                     </a>
                   </li>
@@ -62,7 +63,7 @@ export default function Header({}: Props) {
                   <li>
                     <a
                       className="text-gray-500 transition hover:text-yellow-500/75 dark:text-white dark:hover:text-yellow-300 group relative"
-                      href="/"
+                      href="/blog"
                     >
                       <span> Our Blogs</span>
                       <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"/>
@@ -73,31 +74,13 @@ export default function Header({}: Props) {
 
               <div className="flex items-center gap-4">
                 <div className="sm:flex sm:gap-4">
-                  <a
-                    className="rounded-full border border-yellow-600 px-5 py-2.5 text-sm font-medium text-yellow-500  shadow hover:bg-yellow-600 hover:text-black transition-all"
-                    href="/"
-                  >
-                    Login
-                  </a>
-                </div>
                 <Button />
+                </div>
+                
 
                 <div className="block md:hidden">
                   <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-500/75 dark:bg-gray-800 dark:text-white dark:hover:text-yellow-300">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      stroke-width="2"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
+                   <Bars3Icon className="w-5 h-5"/>
                   </button>
                   
                 </div>

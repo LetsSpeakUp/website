@@ -5,18 +5,18 @@ type Props = {};
 function JoinUs({}: Props) {
   return (
     <div>
-      <h1 className="text-5xl font-semibold text-center p-8 text-black dark:text-gray-100 bg-gray-50 dark:bg-[#151515] tracking-widest">
+      <h1 className="text-5xl font-semibold text-center p-8 text-black dark:text-yellow-300 bg-gray-50 dark:bg-[#151515] tracking-widest">
         Join Us
       </h1>
       <section className="overflow-hidden bg-gray-50 dark:bg-[#151515] sm:grid sm:grid-cols-2">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white md:text-3xl">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-yellow-300 md:text-3xl">
               We're always looking for new talent!
             </h2>
-            <h2 className="text-md tracking-widest font-light text-gray-900 dark:text-white md:text-xl">
+            <h4 className="text-md tracking-widest font-light text-gray-900 dark:text-white md:text-xl">
               We're always looking for new talent!
-            </h2>
+            </h4>
 
             <p className="hidden text-gray-500 dark:text-gray-300 md:mt-4 md:block">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et,
@@ -27,7 +27,7 @@ function JoinUs({}: Props) {
 
             <div className="mt-4 md:mt-8">
               <a
-                href="#"
+                href="#form"
                 className="inline-block rounded bg-yellow-500 px-12 py-3 text-sm font-medium text-white transition hover:bg-yellow-600 focus:outline-none focus:ring focus:ring-gray-100 shadow-md"
               >
                 Get Started

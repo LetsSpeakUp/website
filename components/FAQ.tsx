@@ -6,10 +6,11 @@ type Props = {};
 
 function FAQ({}: Props) {
   return (
-    <div className="flex flex-col justify-center bg-gray-100 dark:bg-[#151515] max-w-full">
-      <div className="flex-col space-y-6 p-5 px-3">
-        <h1 className="font-semibold text-2xl md:text-4xl text-yellow-300 text-center mt-5">
-          Frequently Asked Questions
+    <div className="flex justify-center bg-gray-100 dark:bg-[#151515]">
+      <div className="flex-col space-y-6 p-5 px-3 max-w-3xl">
+        <h1 className="font-semibold text-2xl md:text-5xl text-black dark:text-yellow-300 text-center mt-5 group relative">
+          <span>Frequently Asked Questions</span> 
+          <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"/>
         </h1>
         <h2 className="font-light text-md md:text-xl text-black dark:text-gray-300 text-center pb-5">
           Everything you need to know about us

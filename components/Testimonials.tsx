@@ -14,11 +14,11 @@ function Testimonials({}: Props) {
           transition={{ duration: 1}}
           className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
         >
-          <h2 className="text-4xl max-w-fit font-bold tracking-tight sm:text-5xl text-black dark:text-yellow-300 relative group cursor-default pb-5">
+          <h2 className="text-4xl max-w-fit font-bold tracking-tight sm:text-5xl text-black dark:text-yellow-300 relative group cursor-default ">
             <span>See What The Community Has to say</span>
             <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span>
           </h2>
-          <h3 className="text-2xl max-w-fit font-light tracking-widest sm:text-lg text-black dark:text-gray-300">Testimonials from our community members</h3>
+          <h3 className="text-2xl max-w-fit font-light tracking-widest sm:text-lg text-black dark:text-gray-300 pt-5">Testmonials from our community members</h3>
 
           <motion.div
             initial={{ opacity: 0, x: 150, y:0}}
@@ -26,7 +26,7 @@ function Testimonials({}: Props) {
             transition={{ duration: 1 }}
             className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8"
           >
-            <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all">
+            <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all hover:scale-105">
               <div className="flex items-center gap-4">
                 <img
                   alt="Man"
@@ -55,7 +55,7 @@ function Testimonials({}: Props) {
               </p>
             </blockquote>
 
-            <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all">
+            <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all hover:scale-105">
               <div className="flex items-center gap-4">
                 <img
                   alt="Man"
@@ -64,7 +64,7 @@ function Testimonials({}: Props) {
                 />
 
                 <div>
-                  <div className="flex justify-start gap-0.5 text-yellow-500">
+                  <div className="flex justify-start gap-0.5 text-yellow-500 animate-pulse">
                     <StarIcon className="h-4 w-4" />
                     <StarIcon className="h-4 w-4" />
                     <StarIcon className="h-4 w-4" />
@@ -84,7 +84,7 @@ function Testimonials({}: Props) {
               </p>
             </blockquote>
 
-            <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all">
+            <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all hover:scale-105">
               <div className="flex items-center gap-4">
                 <img
                   alt="Man"

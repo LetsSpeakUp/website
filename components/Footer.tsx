@@ -1,4 +1,6 @@
 import React from 'react'
+import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
+import { SocialIcon } from 'react-social-icons';
 
 type Props = {}
 
@@ -61,7 +63,7 @@ function Footer({}: Props) {
           </div>
   
           <p
-            className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left"
+            className="mt-6 max-w-md text-center leading-relaxed text-gray-400 sm:max-w-xs sm:text-left"
           >
             An all inclusive community to level up your soft skills and help others reach the same heights!
           </p>
@@ -166,7 +168,7 @@ function Footer({}: Props) {
         >
           <div className="text-center sm:text-left">
           <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>About Us</span>
-            <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
+            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -181,7 +183,7 @@ function Footer({}: Props) {
               <li>
                 <a
                   className="text-gray-700 transition hover:text-yellow-300"
-                  href="/"
+                  href="/meet"
                 >
                   Meet the Team
                 </a>
@@ -209,7 +211,7 @@ function Footer({}: Props) {
   
           <div className="text-center sm:text-left">
           <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>Events</span>
-            <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
+            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -254,7 +256,7 @@ function Footer({}: Props) {
   
           <div className="text-center sm:text-left">
             <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>Contact Us</span>
-            <span className="absolute -bottom-1 right-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
+            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
@@ -262,20 +264,7 @@ function Footer({}: Props) {
                   className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   href="/"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 shrink-0 text-gray-200"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                    />
-                  </svg>
+                  <EnvelopeIcon className='h-5 w-5 text-yellow-500'/>
   
                   <span className="flex-1 text-gray-700">letsspeakup@gmail.com</span>
                 </a>
@@ -286,20 +275,7 @@ function Footer({}: Props) {
                   className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   href="/"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 shrink-0 text-gray-200"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                    />
-                  </svg>
+                 <PhoneIcon className='h-5 w-5 text-yellow-500'/>
   
                   <span className="flex-1 text-gray-700">0123456789</span>
                 </a>
@@ -308,25 +284,7 @@ function Footer({}: Props) {
               <li
                 className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-5 w-5 shrink-0 text-gray-200"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                </svg>
+                <MapPinIcon className='h-5 w-5 text-yellow-500'/>
   
                 <address className="-mt-0.5 flex-1 not-italic text-gray-700">
                   ABES Institute of Techonlogy
@@ -339,13 +297,13 @@ function Footer({}: Props) {
   
       <div className="mt-12 border-t border-gray-100 pt-6">
         <div className="text-center sm:flex sm:justify-between sm:text-left">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-400">
             <span className="block sm:inline">All rights reserved.</span>
   
            
           </p>
   
-          <p className="mt-4 text-sm text-gray-500 sm:order-first sm:mt-0">
+          <p className="mt-4 text-sm text-gray-400 sm:order-first sm:mt-0">
             &copy; 2023 Let's Speak Up
           </p>
         </div>

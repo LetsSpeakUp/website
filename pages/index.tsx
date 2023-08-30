@@ -13,7 +13,7 @@ export default function Home() {
   const { scrollYProgress } = useScroll()
 const scaleX = useSpring(scrollYProgress)
   return (
-    <div className="scrollbar scrollbar-thumb-sky-500 scrollbar-track-gray-900">
+    <div className="scrollbar scrollbar-thumb-yellow-500 scrollbar-track-gray-900">
       <motion.div
         className="sticky h-1 top-0 bg-yellow-500 will-change-transform z-50 max-w-full"
         style={{ scaleX }} 
