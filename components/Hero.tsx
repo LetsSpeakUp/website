@@ -8,7 +8,7 @@ function Hero({}: Props) {
     <div className="h-screen">
       <section className="bg-gray-100 dark:bg-[#151515]">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center text-black dark:text-gray-100">
-          <motion.div initial={{opacity:0, x:-15}} whileInView={{opacity:1, x:0}} transition={{duration:1}}  className="mx-auto max-w-xl text-center">
+          <motion.div initial={{opacity:0, x:-15}} whileInView={{opacity:1, x:0}} transition={{duration:1}}  className="mx-auto max-w-xl text-center cursor-default">
             <h1 className="text-3xl font-extrabold sm:text-5xl">
               Understand User Flow.
               <strong className="font-extrabold text-yellow-600 sm:block">
