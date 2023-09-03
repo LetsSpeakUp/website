@@ -1,18 +1,20 @@
 import React from 'react'
+import { motion, AnimatePresence, LayoutGroup } from 'framer-motion'
+import { useState, useCallback } from 'react';
 
 type Props = {}
 
 function Banner({}: Props) {
-  return (
-    <div>
-      export default function App() {
   const [index, setIndex] = useState(false);
 
   const handleClose = useCallback(() => {
     setIndex(false);
   }, []);
 
+
   return (
+
+  <div>
     <LayoutGroup>
       <ul className={styles.gallery}>
         {[0, 1, 2, 3].map((item) => (
@@ -119,7 +121,6 @@ function Banner({}: Props) {
       </AnimatePresence>
     </LayoutGroup>
   );
-}
     </div>
   )
 }
