@@ -5,10 +5,10 @@ type Props = {};
 function JoinUs({}: Props) {
   return (
     <div>
-      <h1 className="text-5xl font-semibold text-center p-8 text-black dark:text-yellow-300 bg-gray-50 dark:bg-[#151515] tracking-widest">
+      <h1 className="text-5xl font-semibold text-center p-8 text-black dark:text-yellow-300 tracking-widest">
         Join Us
       </h1>
-      <section className="overflow-hidden bg-gray-50 dark:bg-[#151515] sm:grid sm:grid-cols-2">
+      <section className="overflow-hidden sm:grid sm:grid-cols-2">
         <div className="p-8 md:p-12 lg:px-16 lg:py-24">
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-yellow-300 md:text-3xl">
@@ -43,7 +43,7 @@ function JoinUs({}: Props) {
         />
       </section>
 
-      <section className="bg-gray-100 dark:bg-[#151515] text-black dark:text-gray-100">
+      <section className="text-black dark:text-gray-100">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:py-12">

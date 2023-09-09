@@ -7,7 +7,7 @@ type Props = {};
 export default function Header({}: Props) {
   return (
     <div>
-      <header className="bg-gray-100 dark:bg-[#151515]">
+      <header className="bg-gray-100 dark:bg-transparent">
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="flex-1 md:flex md:items-center md:gap-12">

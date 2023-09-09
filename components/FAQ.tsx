@@ -6,7 +6,7 @@ type Props = {};
 
 function FAQ({}: Props) {
   return (
-    <div className="flex justify-center bg-gray-100 dark:bg-[#151515]">
+    <div className="flex justify-center">
       <div className="flex-col space-y-6 p-5 px-3 max-w-3xl">
         <h1 className="font-semibold text-2xl md:text-5xl text-black dark:text-yellow-300 text-center mt-5 group relative">
           <span>Frequently Asked Questions</span> 

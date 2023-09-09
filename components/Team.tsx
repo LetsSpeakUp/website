@@ -6,7 +6,7 @@ type Props = {};
 function Team({}: Props) {
   return (
     <div>
-      <section className="bg-white dark:bg-[#151515]">
+      <section className="">
         <div className="container px-6 py-10 mx-auto">
           <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
             Our{" "}
@@ -156,7 +156,6 @@ function Team({}: Props) {
                 >
                   <svg
                     className="w-6 h-6 fill-current"
-                    viewBox="0 0 24 24"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >

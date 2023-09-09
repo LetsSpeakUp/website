@@ -17,15 +17,10 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  
   background: linear-gradient(to bottom,
       transparent,
       rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-  background-color: #242424;
-}
 
-@layer base {
-  body {
-    @apply bg-white dark:bg-[#151515]
-  }
+  background-color: #e5e7eb;
 }
