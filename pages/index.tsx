@@ -6,14 +6,19 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import { motion, useScroll, useSpring } from "framer-motion";
 import FAQ from "@/components/FAQ";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const { scrollYProgress } = useScroll()
-const scaleX = useSpring(scrollYProgress)
+const scaleX =(scrollYProgress)
   return (
-    <div className="scrollbar scrollbar-thumb-yellow-500 scrollbar-track-gray-900">
+    <div className="scrollbar scrollbar-thumb-yellow-500 scrollbar-track-gray-900 bg-[#f9fafb] dark:bg-gradient-to-t from-slate-900 to-neutral-950">
+      <Head>
+        <title>Let's Speak Up</title>
+      <link rel="icon" href="/favicon.ico" />
+      </Head>
       <motion.div
         className="sticky h-1 top-0 bg-yellow-500 will-change-transform z-50 max-w-full"
         style={{ scaleX }} 
@@ -22,7 +27,7 @@ const scaleX = useSpring(scrollYProgress)
       <Header />
       <Hero />
 
-      <section className="bg-gray-100 dark:bg-[#151515]">
+      <section className="">
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="max-w-3xl">
             <h2 className="text-3xl font-bold sm:text-4xl text-black dark:text-gray-100 text-center relative group">

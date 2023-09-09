@@ -8,7 +8,7 @@ function Footer({}: Props) {
   return (
     <div>
   
-  <footer className="bg-gray-200 dark:bg-gray-950 bottom-0">
+  <footer className="bg-neutral-200 dark:bg-gray-950 bottom-0">
     <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
@@ -63,7 +63,7 @@ function Footer({}: Props) {
           </div>
   
           <p
-            className="mt-6 max-w-md text-center leading-relaxed text-gray-400 sm:max-w-xs sm:text-left"
+            className="mt-6 max-w-md text-center leading-relaxed text-gray-900 dark:text-gray-400 sm:max-w-xs sm:text-left"
           >
             An all inclusive community to level up your soft skills and help others reach the same heights!
           </p>
@@ -168,12 +168,13 @@ function Footer({}: Props) {
         >
           <div className="text-center sm:text-left">
           <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>About Us</span>
-            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
+            <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span>
+            </p>
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                   Company History
@@ -182,7 +183,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/meet"
                 >
                   Meet the Team
@@ -191,7 +192,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                  Join the Team
@@ -200,7 +201,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                   Careers
@@ -216,7 +217,7 @@ function Footer({}: Props) {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                  Our Blogs
@@ -225,7 +226,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                   Web Design
@@ -234,7 +235,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                   Marketing
@@ -243,7 +244,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 transition hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
                   Google Ads
@@ -266,7 +267,7 @@ function Footer({}: Props) {
                 >
                   <EnvelopeIcon className='h-5 w-5 text-yellow-500'/>
   
-                  <span className="flex-1 text-gray-700">letsspeakup@gmail.com</span>
+                  <span className="flex-1 dark:text-gray-400 text-gray-700">letsspeakup@gmail.com</span>
                 </a>
               </li>
   
@@ -277,7 +278,7 @@ function Footer({}: Props) {
                 >
                  <PhoneIcon className='h-5 w-5 text-yellow-500'/>
   
-                  <span className="flex-1 text-gray-700">0123456789</span>
+                  <span className="flex-1 dark:text-gray-400 text-gray-700">0123456789</span>
                 </a>
               </li>
   
@@ -286,7 +287,7 @@ function Footer({}: Props) {
               >
                 <MapPinIcon className='h-5 w-5 text-yellow-500'/>
   
-                <address className="-mt-0.5 flex-1 not-italic text-gray-700">
+                <address className="-mt-0.5 flex-1 not-italic dark:text-gray-400 text-gray-700">
                   ABES Institute of Techonlogy
                 </address>
               </li>
@@ -295,7 +296,7 @@ function Footer({}: Props) {
         </div>
       </div>
   
-      <div className="mt-12 border-t border-gray-100 pt-6">
+      <div className="mt-12 border-t border-gray-900 dark:border-t-yellow-300 pt-6">
         <div className="text-center sm:flex sm:justify-between sm:text-left">
           <p className="text-sm text-gray-400">
             <span className="block sm:inline">All rights reserved.</span>

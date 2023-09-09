@@ -7,7 +7,7 @@ type Props = {};
 
 function meet({}: Props) {
   return (
-    <div>
+    <div className="bg-[#f9fafb] dark:bg-gradient-to-t from-slate-900 to-neutral-950">
       <Header />
       <Team />
       <Footer />
