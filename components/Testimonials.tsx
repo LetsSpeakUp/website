@@ -2,8 +2,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import { StarIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import Sushant from "@/public/Sushant.png"
-import Ishaan from "@/public/Ishaan.jpg"
+import Sushant from "@/public/images/Sushant.png"
+import Ishaan from "@/public/images/Ishaan.jpg"
 
 type Props = {};
 

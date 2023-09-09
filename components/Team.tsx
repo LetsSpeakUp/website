@@ -1,13 +1,19 @@
 import React from "react";
 import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
 
 type Props = {};
 
 function Team({}: Props) {
   return (
     <div>
-      <section className="">
-        <div className="container px-6 py-10 mx-auto">
+      <section className="container px-6 py-10 mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          viewport={{ once: true }}
+        >
           <h1 className="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
             Our{" "}
             <span className="text-yellow-500 dark:text-yellow-300">
@@ -22,7 +28,11 @@ function Team({}: Props) {
           </p>
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-2">
-            <div className="px-12 py-8 transition-colors duration-300 hover:shadow-xl transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 dark:border-yellow-300 dark:hover:border-transparent">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              className="px-12 py-8 transition-colors duration-300 hover:shadow-xl transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 dark:border-yellow-300 dark:hover:border-transparent"
+            >
               <div className="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-200"
@@ -92,9 +102,13 @@ function Team({}: Props) {
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 hover:shadow-xl dark:border-yellow-300 dark:hover:border-transparent">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 hover:shadow-xl dark:border-yellow-300 dark:hover:border-transparent"
+            >
               <div className="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-200"
@@ -163,9 +177,13 @@ function Team({}: Props) {
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 hover:shadow-xl dark:border-yellow-300 dark:hover:border-transparent">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 hover:shadow-xl dark:border-yellow-300 dark:hover:border-transparent"
+            >
               <div className="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-200 shadow-2xl"
@@ -235,9 +253,13 @@ function Team({}: Props) {
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-amber-500 hover:shadow-xl dark:border-yellow-300 dark:hover:border-transparent">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.9 }}
+              className="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group hover:bg-yellow-600/90 hover:shadow-xl dark:border-yellow-300 dark:hover:border-transparent"
+            >
               <div className="flex flex-col sm:-mx-4 sm:flex-row">
                 <img
                   className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-200"
@@ -307,9 +329,9 @@ function Team({}: Props) {
                   </svg>
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
-        </div>
+        </motion.div>
       </section>
     </div>
   );

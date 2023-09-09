@@ -7,6 +7,7 @@ import Testimonials from "@/components/Testimonials";
 import { motion, useScroll, useSpring } from "framer-motion";
 import FAQ from "@/components/FAQ";
 import Head from "next/head";
+import { CardList } from "@/components/CardList";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -99,6 +100,7 @@ const scaleX =(scrollYProgress)
           </div>
         </div>
       </section>
+      {/* <CardList /> */}
 
       <Testimonials />
 
