@@ -199,19 +199,12 @@ function Footer({}: Props) {
                 </a>
               </li>
   
-              <li>
-                <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
-                >
-                  Careers
-                </a>
-              </li>
+              
             </ul>
           </div>
   
           <div className="text-center sm:text-left">
-          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>Events</span>
+          <p className="text-lg font-medium text-gray-700 dark:text-gray-200 relative group max-w-fit"><span>Extras</span>
             <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span></p>
   
             <ul className="mt-8 space-y-4 text-sm">
@@ -229,7 +222,7 @@ function Footer({}: Props) {
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
-                  Web Design
+                  Community events
                 </a>
               </li>
   
@@ -238,18 +231,11 @@ function Footer({}: Props) {
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
                   href="/"
                 >
-                  Marketing
+                  Meetups
                 </a>
               </li>
   
-              <li>
-                <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
-                >
-                  Google Ads
-                </a>
-              </li>
+              
             </ul>
           </div>
   

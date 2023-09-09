@@ -21,7 +21,7 @@ function blog({}: Props) {
       <title>Our Blogs</title>
     </Head>
       <motion.div
-        className="sticky h-1 top-0 bg-yellow-500 will-change-transform z-50 max-w-full"
+        className="sticky h-1 top-0 bg-gradient-to-r from-yellow-500 via-amber-600 to-yellow-500 will-change-transform z-50 max-w-full"
         style={{ scaleX }}
       />
       <Header />
