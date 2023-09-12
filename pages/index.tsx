@@ -18,7 +18,7 @@ export default function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = scrollYProgress;
   return (
-    <div className="scrollbar scrollbar-thumb-yellow-500 scrollbar-track-gray-900 bg-neutral-100 dark:bg-gradient-to-t from-slate-900 via-slate-800 to-neutral-950">
+    <div className="scrollbar scrollbar-thumb-yellow-500 scrollbar-track-gray-900 bg-gradient-to-tr from-yellow-100 via-neutral-200 to-yellow-100/70 dark:bg-gradient-to-t dark:from-slate-900 dark:via-slate-800 dark:to-neutral-950">
       <Head>
         <title>Let's Speak Up</title>
         <link rel="icon" href="/favicon.ico" />
@@ -35,7 +35,7 @@ export default function Home() {
         <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="max-w-3xl">
           <h2 className="text-3xl max-w-fit font-bold tracking-tight sm:text-4xl text-black dark:text-gray-100 relative group cursor-default">
-            Things we <span className="text-yellow-300">Believe</span> In
+            Things we <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500">Believe</span> In
             <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span>
           </h2>
           <h3 className="text-lg max-w-fit tracking-widest sm:text-lg text-black dark:text-gray-300 pt-5">
@@ -115,7 +115,7 @@ export default function Home() {
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
            
-            Statistics that <span className="text-yellow-500 dark:text-yellow-300">Tell The Tale</span>
+            Statistics that <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-600/80 dark:bg-gradient-to-r dark:from-yellow-300 dark:to-yellow-500">Tell The Tale</span>
           </h2>
           <p className="text-base text-gray-700 md:text-lg dark:text-gray-300">
             Sed ut perspiciatis unde omnis iste natus error sit voluptatem

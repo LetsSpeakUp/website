@@ -11,7 +11,7 @@ export default function FAQ() {
       <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl md:mx-auto">
-            Frequently Asked Questions
+            Got Questions? We've <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500">Got you Covererd</span> 
           </h2>
           <p className="text-base text-gray-700  dark:text-gray-300 md:text-lg">
             Everything you need to know about Let's Speak Up

@@ -14,7 +14,7 @@ function blog({}: Props) {
   const scaleX = scrollYProgress;
 
   return (
-    <div className="bg-[#f9fafb] dark:bg-gradient-to-t from-slate-900 to-neutral-950">
+    <div className="bg-gradient-to-tr from-yellow-100 via-neutral-200 to-yellow-100/70 dark:bg-gradient-to-t dark:from-slate-900 dark:to-neutral-950">
       <Head>
         <title>Our Blogs</title>
       </Head>
@@ -31,7 +31,7 @@ function blog({}: Props) {
         className="text-center cursor-default pt-10"
       >
         <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl dark:text-gray-100 relative group select-none">
-          From the <span className=" bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500">Blog</span>
+          From the <span className="bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-yellow-600/80 dark:bg-gradient-to-r dark:from-yellow-300 dark:to-yellow-500">Blog</span>
           {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"></span> */}
         </h1>
 
