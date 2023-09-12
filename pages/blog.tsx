@@ -31,7 +31,7 @@ function blog({}: Props) {
         className="text-center cursor-default pt-10"
       >
         <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl dark:text-gray-100 relative group select-none">
-          From the <span className="text-yellow-500 dark:text-yellow-300">Blog</span>
+          From the <span className=" bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500">Blog</span>
           {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"></span> */}
         </h1>
 

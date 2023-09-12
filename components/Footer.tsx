@@ -134,7 +134,7 @@ function Footer({}: Props) {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/about"
                 >
                   Our History
@@ -143,7 +143,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/meet"
                 >
                   Meet the Team
@@ -152,7 +152,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/Join"
                 >
                  Join the Team
@@ -170,7 +170,7 @@ function Footer({}: Props) {
             <ul className="mt-8 space-y-4 text-sm">
               <li>
                 <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/blog"
                 >
                  Our Blogs
@@ -179,7 +179,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/404"
                 >
                   Community events
@@ -188,7 +188,7 @@ function Footer({}: Props) {
   
               <li>
                 <a
-                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
+                  className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/404"
                 >
                   Meetups

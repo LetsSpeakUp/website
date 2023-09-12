@@ -18,7 +18,8 @@ function Hero({}: Props) {
 
   const item = {
     hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0 },
+    show: { opacity: 1, y: 0, duration:1 },
+    
   };
 
   return (
@@ -34,7 +35,7 @@ function Hero({}: Props) {
           >
             <h1 className="text-3xl font-extrabold sm:text-5xl">
               Understand User Flow.
-              <strong className="font-extrabold text-yellow-600 sm:block">
+              <strong className="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500 sm:block">
                 Let's Speak Up.
               </strong>
             </h1>
