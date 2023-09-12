@@ -8,6 +8,25 @@ import Ishaan from "@/public/images/Ishaan.jpg"
 type Props = {};
 
 function Testimonials({}: Props) {
+
+  // const container = {
+  //   hidden: { opacity: 0, y: 15 },
+  //   show: {
+  //     opacity: 1,
+  //     y: 0,
+  //     transition: {
+  //       delayChildren: 1,
+  //       duration: 1,
+  //     },
+  //   },
+  // };
+
+  // const item = {
+  //   hidden: { opacity: 0, y: 50 },
+  //   show: { opacity: 1, y: 0 },
+  // };
+
+
   return (
     <div>
       <section className="flex">
@@ -17,16 +36,20 @@ function Testimonials({}: Props) {
           transition={{ duration: 1}}
           className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
         >
-          <h2 className="text-4xl max-w-fit font-bold tracking-tight sm:text-5xl text-black dark:text-gray-100 relative group cursor-default">
+          <h2 className="text-3xl max-w-fit font-bold tracking-tight sm:text-4xl text-black dark:text-gray-100 relative group cursor-default">
             See What <span className="text-yellow-300">The Community</span> Has to say
             <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span>
           </h2>
-          <h3 className="text-2xl max-w-fit font-light tracking-widest sm:text-lg text-black dark:text-gray-300 pt-5">Testmonials from our community members</h3>
+          <h3 className="text-lg max-w-fit font-light tracking-widest sm:text-lg text-black dark:text-gray-300 pt-5">Testmonials from our community members</h3>
 
           <motion.div
-            initial={{ opacity: 0, x: 250, y:0, scale:0.9}}
-            whileInView={{ opacity: 1, y: 0, x: 0, scale:1 }}
+            initial={{ opacity: 0, x: 250, y:0}}
+            whileInView={{ opacity: 1, y: 0, x: 0}}
             transition={{ duration: 1 }}
+            // variants={container}
+            // initial="hidden"
+            // animate="show"
+            viewport={{ once: true }}
             className="mt-12 grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-8"
           >
             <blockquote className="rounded-lg border border-yellow-500 p-8 hover:shadow-lg transition-all hover:scale-105">

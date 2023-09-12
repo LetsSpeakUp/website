@@ -1,183 +1,147 @@
-import React from "react";
-import { PlusCircleIcon } from "@heroicons/react/24/outline";
-import { MinusCircleIcon } from "@heroicons/react/24/outline";
+// pages/faq.tsx
+import React, { useState } from "react";
+import { motion, AnimatePresence, Variants } from "framer-motion";
 
-type Props = {};
+const Item: React.FC<{ title: string }> = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
 
-function FAQ({}: Props) {
+  const variants: Variants = {
+    open: { height: "auto", opacity: 1 },
+    closed: { height: 0, opacity: 0 },
+  };
+
   return (
-    <div className="flex justify-center">
-      <div className="flex-col space-y-6 p-5 px-3 max-w-3xl">
-        <h1 className="font-semibold text-2xl md:text-5xl text-black dark:text-yellow-300 text-center mt-5 group relative">
-          <span>Frequently Asked Questions</span> 
-          <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"/>
-        </h1>
-        <h2 className="font-light text-md md:text-xl text-black dark:text-gray-300 text-center pb-5">
-          Everything you need to know about us
-        </h2>
+    <div className="border rounded shadow-sm">
+      <motion.button
+        type="button"
+        aria-label="Open item"
+        title="Open item"
+        className="flex items-center justify-between w-full p-4 focus:outline-none"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <p className="text-lg font-medium">{title}</p>
+        <div className="flex items-center justify-center w-8 h-8 border rounded-full">
+          <motion.svg
+            viewBox="0 0 24 24"
+            className={`w-3 text-gray-600 transition-transform duration-200 ${
+              isOpen ? "transform rotate-180" : ""
+            }`}
+          >
+            <motion.polyline
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
+              points="2,7 12,17 22,7"
+              strokeLinejoin="round"
+              initial={false}
+              animate={isOpen ? "open" : "closed"}
+            />
+          </motion.svg>
+        </div>
+      </motion.button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            className="p-4 pt-0"
+            variants={variants}
+            initial="closed"
+            animate="open"
+            exit="closed"
+          >
+            <p className="text-gray-700">{children}</p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
-        <details
-          className="group rounded-lg bg-gray-50 border hover:border-yellow-500 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+const Faq: React.FC = () => {
+  return (
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
+        <div className="flex flex-col mb-16 sm:text-center">
+          <a href="/" className="mb-6 sm:mx-auto">
+            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-indigo-50">
+              <motion.svg
+                className="w-10 h-10 text-deep-purple-accent-400"
+                stroke="currentColor"
+                viewBox="0 0 52 52"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.3 }}
+              >
+                <polygon
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  fill="none"
+                  points="29 13 14 29 25 29 23 39 38 23 27 23"
+                />
+              </motion.svg>
+            </div>
+          </a>
+          <div className="max-w-xl md:mx-auto sm:text-center lg:max-w-2xl">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
+              <span className="relative inline-block">
+                <motion.svg
+                  viewBox="0 0 52 24"
+                  fill="currentColor"
+                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <defs>
+                    <pattern
+                      id="ec5d8ef5-b853-4714-b94f-df28ec98eeb7"
+                      x="0"
+                      y="0"
+                      width=".135"
+                      height=".30"
+                    >
+                      <circle cx="1" cy="1" r=".7" />
+                    </pattern>
+                  </defs>
+                  <rect
+                    fill="url(#ec5d8ef5-b853-4714-b94f-df28ec98eeb7)"
+                    width="52"
+                    height="24"
+                  />
+                </motion.svg>
+                <span className="relative">The</span>
+              </span>{" "}
+              quick, brown fox jumps over a lazy dog
             </h2>
-
-            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details
-          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details
-          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details
-          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details
-          className="group rounded-lg bg-gray-50 dark:bg-gray-900 hover:shadow-lg transition-all p-6 [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details
-          className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden"
-          open
-        >
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span className="relative h-5 w-5 shrink-0 tranisiton all hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700 dark:text-yellow-200">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-
-        <details className="group rounded-lg bg-gray-50 dark:bg-gray-900 p-6 hover:shadow-lg transition-all [&_summary::-webkit-details-marker]:hidden">
-          <summary className="flex cursor-pointer items-center justify-between gap-1.5 text-gray-900 dark:text-gray-100">
-            <h2 className="font-medium">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span className="relative h-5 w-5 shrink-0 hover:animate-pulse">
-              <PlusCircleIcon className="group-open:opacity-0" />
-
-              <MinusCircleIcon className="opacity-0 group-open:opacity-100" />
-            </span>
-          </summary>
-
-          <p className="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
+            <p className="text-base text-gray-700 md:text-lg">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque rem aperiam, eaque ipsa quae.
+            </p>
+          </div>
+        </div>
+        <motion.div className="space-y-4">
+          <Item title="The quick, brown fox jumps over a lazy dog?">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque rem aperiam, eaque ipsa quae.
+          </Item>
+          <Item title="The first mate and his Skipper too will do?">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque rem aperiam, eaque ipsa quae.
+          </Item>
+          <Item title="Is the Space Pope reptilian!?">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque rem aperiam, eaque ipsa quae.
+          </Item>
+          <Item title="How much money you got on you?">
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque rem aperiam, eaque ipsa quae.
+          </Item>
+        </motion.div>
       </div>
     </div>
   );
-}
+};
 
-export default FAQ;
+export default Faq;

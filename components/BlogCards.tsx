@@ -9,7 +9,7 @@ export default function BlogCards({}: Props) {
         <div className="container px-6 py-10 mx-auto">
           <div className="flex items-center justify-between cursor-default">
             <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white relative group">
-              Latest from <span className="text-yellow-300">Our members</span>
+              Latest from <span className="text-yellow-500 dark:text-yellow-300">Our members</span>
               <span className="absolute -bottom-1 left-0 w-0 h-1 bg-yellow-400 transition-all group-hover:w-full"></span>{" "}
             </h1>
           </div>
@@ -19,13 +19,13 @@ export default function BlogCards({}: Props) {
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
             <div>
               <img
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                className="object-cover object-center w-full h-64 rounded-lg lg:h-80 transition hover:shadow-lg"
                 src="https://images.unsplash.com/photo-1624996379697-f01d168b1a52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               />
 
               <div className="mt-8">
-                <span className="text-yellow-300 uppercase">category</span>
+                <span className="text-yellow-500 dark:text-yellow-300 uppercase">category</span>
 
                 <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                   What do you want to know about UI
@@ -53,7 +53,7 @@ export default function BlogCards({}: Props) {
 
                   <a
                     href="#"
-                    className="inline-block text-yellow-300 underline hover:text-yellow-500 transition"
+                    className="inline-block text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
                   >
                     Read more
                   </a>
@@ -63,13 +63,13 @@ export default function BlogCards({}: Props) {
 
             <div>
               <img
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                className="object-cover object-center w-full h-64 rounded-lg lg:h-80 transition hover:shadow-lg"
                 src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               />
 
               <div className="mt-8">
-                <span className="text-yellow-300 uppercase">category</span>
+                <span className="text-yellow-500 dark:text-yellow-300 uppercase">category</span>
 
                 <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                   Why it is a no-brainer to ask for help
@@ -97,7 +97,7 @@ export default function BlogCards({}: Props) {
 
                   <a
                     href="#"
-                    className="inline-block text-yellow-300 underline hover:text-yellow-500 transition"
+                    className="inline-block text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
                   >
                     Read more
                   </a>
@@ -107,13 +107,13 @@ export default function BlogCards({}: Props) {
 
             <div>
               <img
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                className="object-cover object-center w-full h-64 rounded-lg lg:h-80 transition hover:shadow-lg"
                 src="https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
                 alt=""
               />
 
               <div className="mt-8">
-                <span className="text-yellow-300 uppercase">category</span>
+                <span className="text-yellow-500 dark:text-yellow-300 uppercase">category</span>
 
                 <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                   Which services you get from Meraki UI
@@ -141,7 +141,7 @@ export default function BlogCards({}: Props) {
 
                   <a
                     href="#"
-                    className="inline-block text-yellow-300 underline hover:text-yellow-500 transition"
+                    className="inline-block text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
                   >
                     Read more
                   </a>
@@ -150,13 +150,13 @@ export default function BlogCards({}: Props) {
             </div>
             <div>
               <img
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                className="object-cover object-center w-full h-64 rounded-lg lg:h-80 transition hover:shadow-lg"
                 src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tbXVuY2F0aW9ufGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
 
               <div className="mt-8">
-                <span className="text-yellow-300 uppercase">category</span>
+                <span className="text-yellow-500 dark:text-yellow-300 uppercase">category</span>
 
                 <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                   The ABCs of Explaining With Brevity
@@ -184,7 +184,7 @@ export default function BlogCards({}: Props) {
 
                   <a
                     href="#"
-                    className="inline-block text-yellow-300 underline hover:text-yellow-500 transition"
+                    className="inline-block text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
                   >
                     Read more
                   </a>
@@ -194,13 +194,13 @@ export default function BlogCards({}: Props) {
 
             <div>
               <img
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                className="object-cover object-center w-full h-64 rounded-lg lg:h-80 transition hover:shadow-lg"
                 src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                 alt=""
               />
 
               <div className="mt-8">
-                <span className="text-yellow-300 uppercase">category</span>
+                <span className="text-yellow-500 dark:text-yellow-300 uppercase">category</span>
 
                 <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                   Why it is a no-brainer to ask for help
@@ -228,7 +228,7 @@ export default function BlogCards({}: Props) {
 
                   <a
                     href="#"
-                    className="inline-block text-yellow-300 underline hover:text-yellow-500 transition"
+                    className="inline-block text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
                   >
                     Read more
                   </a>
@@ -238,13 +238,13 @@ export default function BlogCards({}: Props) {
 
             <div>
               <img
-                className="object-cover object-center w-full h-64 rounded-lg lg:h-80"
+                className="object-cover object-center w-full h-64 rounded-lg lg:h-80 transition hover:shadow-lg"
                 src="https://images.unsplash.com/photo-1555725305-e823b44548de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=500&q=60"
                 alt=""
               />
 
               <div className="mt-8">
-                <span className="text-yellow-300 uppercase">category</span>
+                <span className="text-yellow-500 dark:text-yellow-300 uppercase">category</span>
 
                 <h1 className="mt-4 text-xl font-semibold text-gray-800 dark:text-white">
                   Mastering Audience Engagement
@@ -272,7 +272,7 @@ export default function BlogCards({}: Props) {
 
                   <a
                     href="#"
-                    className="inline-block text-yellow-300 underline hover:text-yellow-500 transition"
+                    className="inline-block text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
                   >
                     Read more
                   </a>
@@ -283,7 +283,7 @@ export default function BlogCards({}: Props) {
           
         </div>
         <button
-            className="group relative inline-flex items-center justify-center overflow-hidden shadow-md rounded-full border border-yellow-600  hover:bg-yellow-500 px-8 py-3 mb-8 text-white focus:outline-none focus:ring active:bg-yellow-500 hover:text-black transition"
+            className="group relative inline-flex items-center justify-center overflow-hidden shadow-md rounded-full border border-yellow-600  hover:bg-yellow-500 px-8 py-3 mb-8 dark:text-white text-black focus:outline-none focus:outline-yellow-300 focus:ring active:bg-yellow-500 hover:text-black transition"
         
           >
             <span className="absolute -end-full transition-all group-hover:end-4">

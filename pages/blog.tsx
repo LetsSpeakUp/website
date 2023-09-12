@@ -26,12 +26,12 @@ function blog({}: Props) {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1, type: 'spring', stiffness: 100 }}
         viewport={{ once: true }}
         className="text-center cursor-default pt-10"
       >
-        <h1 className="text-2xl font-semibold text-gray-800 lg:text-4xl dark:text-gray-100 relative group ">
-          From the <span className="text-yellow-300">Blog</span>
+        <h1 className="text-3xl font-semibold text-gray-800 lg:text-4xl dark:text-gray-100 relative group select-none">
+          From the <span className="text-yellow-500 dark:text-yellow-300">Blog</span>
           {/* <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-yellow-400 transition-all group-hover:w-full"></span> */}
         </h1>
 
@@ -52,7 +52,7 @@ function blog({}: Props) {
         />
 
         <div className="mt-6 lg:w-1/2 lg:mt-0 lg:mx-6 ">
-          <p className="text-sm text-yellow-300 uppercase">category</p>
+          <p className="text-sm text-yellow-500 dark:text-yellow-300 uppercase">category</p>
 
           <a
             href="#"
@@ -68,7 +68,7 @@ function blog({}: Props) {
 
           <a
             href="#"
-            className="inline-block mt-2 text-yellow-300 underline hover:text-yellow-500 transition"
+            className="inline-block mt-2 text-yellow-500 dark:text-yellow-300 underline hover:text-yellow-500 transition"
           >
             Read more
           </a>

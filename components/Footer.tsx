@@ -1,6 +1,8 @@
 import React from 'react'
 import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline'
 import { SocialIcon } from 'react-social-icons';
+import Image from 'next/image';
+import logo from "@/public/logotext.png";
 
 type Props = {}
 
@@ -15,7 +17,9 @@ function Footer({}: Props) {
           <div className="flex justify-center text-yellow-300 sm:justify-start">
 
             {/* LOGO HERE */}
-           <h2>Let's Speak Up</h2>
+            
+            <Image src={logo} alt="" className=''/>
+           {/* <h2>Let's Speak Up</h2> */}
           </div>
   
           <p
@@ -131,9 +135,9 @@ function Footer({}: Props) {
               <li>
                 <a
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
+                  href="/about"
                 >
-                  Company History
+                  Our History
                 </a>
               </li>
   
@@ -149,7 +153,7 @@ function Footer({}: Props) {
               <li>
                 <a
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
+                  href="/Join"
                 >
                  Join the Team
                 </a>
@@ -167,7 +171,7 @@ function Footer({}: Props) {
               <li>
                 <a
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
+                  href="/blog"
                 >
                  Our Blogs
                 </a>
@@ -176,7 +180,7 @@ function Footer({}: Props) {
               <li>
                 <a
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
+                  href="/404"
                 >
                   Community events
                 </a>
@@ -185,7 +189,7 @@ function Footer({}: Props) {
               <li>
                 <a
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-300 dark:hover:text-yellow-300"
-                  href="/"
+                  href="/404"
                 >
                   Meetups
                 </a>
