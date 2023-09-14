@@ -4,15 +4,17 @@ import JoinUs from "@/components/JoinUs";
 import Head from "next/head";
 import React from "react";
 import { motion } from "framer-motion";
+import ProgressBar from "@/components/ProgressBar";
 
 type Props = {};
 
 function Join({}: Props) {
   return (
-    <div className="bg-[#f9fafb] dark:bg-gradient-to-t from-slate-900 to-neutral-950">
+    <div className="bg-gradient-to-tr from-yellow-100 via-neutral-200 to-yellow-100/70 dark:bg-gradient-to-t dark:from-slate-900 dark:to-neutral-950">
           <Head>
         <title>Join  Us</title>
       </Head>
+      <ProgressBar />
       <Header />
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -27,7 +29,7 @@ function Join({}: Props) {
         </h1>
 
         <p className="max-w-lg mx-auto mt-4 text-gray-500 dark:text-gray-400">
-          Let's get you ahead of the curve, come join the Community! It's totally free!
+          Let&apos;s get you ahead of the curve, come join the Community! It&apos;s totally free!
         </p>
       </motion.div>
       <JoinUs />
