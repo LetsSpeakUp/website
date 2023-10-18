@@ -18,7 +18,7 @@ function JoinUs({}: Props) {
         >
           <div className="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-yellow-300 md:text-3xl">
-              We're always looking for new talent!
+              We&apos;re always looking for new talent!
             </h2>
             <h4 className="text-md tracking-widest font-light text-gray-900 dark:text-white md:text-xl">
               And you look like the perfect addition!
@@ -51,7 +51,7 @@ function JoinUs({}: Props) {
                 </span>
 
                 <span className="text-sm font-medium transition-all group-hover:me-4">
-                  Sure I'm in!
+                  Sure I&apos;m in!
                 </span>
               </button>
             </div>
@@ -160,7 +160,7 @@ function JoinUs({}: Props) {
             </h6>
             <p className="max-w-md mb-3 text-sm text-gray-900 dark:text-gray-100 sm:mx-auto">
               They urge you to put down your sword and come join the winners. In
-              22 years the only 'winners'
+              22 years the only &apos;winners&apos;
             </p>
 
             <div className="top-0 right-0 flex items-center justify-center h-24 lg:-mr-8 lg:absolute">

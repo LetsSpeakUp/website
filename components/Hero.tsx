@@ -4,39 +4,23 @@ import { motion } from "framer-motion";
 type Props = {};
 
 function Hero({}: Props) {
-  const container = {
-    hidden: { opacity: 0, y: 15 },
-    show: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        delayChildren: 1,
-        duration: 1,
-      },
-    },
-  };
-
-  const item = {
-    hidden: { opacity: 0, y: 50 },
-    show: { opacity: 1, y: 0, duration:1 },
-    
-  };
 
   return (
     <div className="h-screen">
-      <section className="">
+      <section className="justify-center content-center">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center text-black dark:text-gray-100">
           <motion.div
-            variants={container}
-            initial="hidden"
-            animate="show"
-            viewport={{ once: true }}
+           initial={{ opacity: 0, y: 50 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           transition={{ duration: 1.5, type: 'spring', stiffness: 100, delay:0.5 }}
+           viewport={{ once: true }}
             className="mx-auto max-w-xl text-center cursor-default"
           >
-            <h1 className="text-3xl font-extrabold sm:text-5xl">
-              Understand User Flow.
+            
+            <h1 className="select-none text-3xl font-extrabold sm:text-5xl">
+              Understand User Flow.<br/>
               <strong className="font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-yellow-300 to-yellow-500 sm:block">
-                Let's Speak Up.
+                Let&apos;s Speak Up.
               </strong>
             </h1>
 
@@ -45,7 +29,11 @@ function Hero({}: Props) {
             </p>
 
             <motion.div
-              variants={item}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay:1, type: 'spring', stiffness: 100 }}
+                viewport={{ once: true }}
+              
               className="mt-8 flex flex-wrap justify-center gap-4"
             >
               <a

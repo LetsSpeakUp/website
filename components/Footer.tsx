@@ -3,6 +3,7 @@ import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/outline
 import { SocialIcon } from 'react-social-icons';
 import Image from 'next/image';
 import logo from "@/public/logotext.png";
+import Link from 'next/link';
 
 type Props = {}
 
@@ -10,7 +11,7 @@ function Footer({}: Props) {
   return (
     <div>
   
-  <footer className="bg-neutral-200 dark:bg-gray-950 bottom-0">
+  <footer className="border-t-2 border-yellow-600 dark:bg-gray-950 bottom-0 dark:border-0">
     <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
@@ -18,7 +19,7 @@ function Footer({}: Props) {
 
             {/* LOGO HERE */}
             
-            <Image src={logo} alt="" className=''/>
+            <Image src={logo} width={300} alt="" className=''/>
            {/* <h2>Let's Speak Up</h2> */}
           </div>
   
@@ -77,7 +78,7 @@ function Footer({}: Props) {
   
             <li>
               <a
-                href="/"
+                href="https://twitter.com/Lets__Speak__Up"
                 rel="noreferrer"
                 target="_blank"
                 className="text-yellow-600 transition hover:text-yellow-300"
@@ -98,7 +99,7 @@ function Footer({}: Props) {
   
             <li>
               <a
-                href="/"
+                href="https://github.com/LetsSpeakUp"
                 rel="noreferrer"
                 target="_blank"
                 className="text-yellow-600 transition hover:text-yellow-300"
@@ -133,30 +134,30 @@ function Footer({}: Props) {
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
-                <a
+                <Link
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/about"
                 >
                   Our History
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
+                <Link
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/meet"
                 >
                   Meet the Team
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
+                <Link
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/Join"
                 >
                  Join the Team
-                </a>
+                </Link>
               </li>
   
               
@@ -169,30 +170,30 @@ function Footer({}: Props) {
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
-                <a
+                <Link
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/blog"
                 >
                  Our Blogs
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
+                <Link
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/404"
                 >
                   Community events
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
+                <Link
                   className="text-gray-700 dark:text-gray-400 transition hover:text-yellow-500 dark:hover:text-yellow-300"
                   href="/404"
                 >
                   Meetups
-                </a>
+                </Link>
               </li>
   
               
@@ -207,25 +208,25 @@ function Footer({}: Props) {
   
             <ul className="mt-8 space-y-4 text-sm">
               <li>
-                <a
+                <Link
                   className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   href="/"
                 >
                   <EnvelopeIcon className='h-5 w-5 text-yellow-500'/>
   
                   <span className="flex-1 dark:text-gray-400 text-gray-700">letsspeakup@gmail.com</span>
-                </a>
+                </Link>
               </li>
   
               <li>
-                <a
+                <Link
                   className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                   href="/"
                 >
                  <PhoneIcon className='h-5 w-5 text-yellow-500'/>
   
                   <span className="flex-1 dark:text-gray-400 text-gray-700">0123456789</span>
-                </a>
+                </Link>
               </li>
   
               <li
@@ -244,14 +245,14 @@ function Footer({}: Props) {
   
       <div className="mt-12 border-t border-gray-900 dark:border-t-yellow-300 pt-6">
         <div className="text-center sm:flex sm:justify-between sm:text-left">
-          <p className="text-sm text-gray-400">
+          <p className="text-sm text-gray-600 dark:text-gray-400">
             <span className="block sm:inline">All rights reserved.</span>
   
            
           </p>
   
-          <p className="mt-4 text-sm text-gray-400 sm:order-first sm:mt-0">
-            &copy; 2023 Let's Speak Up
+          <p className="mt-4 text-sm text-gray-600 dark:text-gray-400 sm:order-first sm:mt-0">
+            &copy; 2023 Let&apos;s Speak Up
           </p>
         </div>
       </div>
